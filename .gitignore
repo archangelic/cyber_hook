@@ -1,0 +1,6 @@
+cyber.json
+cyber_snippets
+myproject.sock
+venv/
+__pycache__/
+*.pyc
