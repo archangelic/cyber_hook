@@ -3,13 +3,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>cyber_hook</title>
+<style>
+body {
+    color: DarkOrange;
+    background: black;
+    font-family: monospace;
+}
+a:link {
+    color: DarkOrange;
+}
+a:visited {
+    color: DarkOrange;
+}
+a:hover {
+    color: Orange;
+}
+.boxed {
+    border: 1px solid;
+    display: inline-block;
+    padding: 10px;
+}
+</style>
 </head>
 
 <body>
     <h1>cyber_hook</h1>
-    <h2>enjoy!</h2>
+    <h2>enjoy this free snippet!</h2>
+    <div class="boxed">
+        {{ snippet }}
+    </div>
+    <p> go to <a href="http://cyber.archangelic.space">http://cyber.archangelic.space</a> for a random plaintext snippet generated using markov chains and cyberpunk novels</p>
     <p><a href="https://github.com/archangelic/cyber_hook">Source Code</a></p>
     <p>by <a href="https://cybre.space/@archangelic">archangelic</a></p>
 </body>

@@ -4,15 +4,17 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+def get_snippet():
+    with open('cyber_snippets') as c:
+        return random.choice(c.readlines()).strip()
+
 @app.route('/')
 def hello():
-    with open('cyber_snippets') as c:
-        out = random.choice(c.readlines()).strip()
-    return out
+    return get_snippet()
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', snippet=get_snippet())
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8081)
