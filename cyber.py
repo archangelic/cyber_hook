@@ -8,11 +8,11 @@ def get_snippet():
     with open('cyber_snippets') as c:
         return random.choice(c.readlines()).strip()
 
-@app.route('/')
+@app.route('/snippet')
 def hello():
     return get_snippet()
 
-@app.route('/about')
+@app.route('/')
 def about():
     return render_template('about.html', snippet=get_snippet())
 
