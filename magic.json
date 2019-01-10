@@ -1,0 +1,10 @@
+{
+  "name" : ["#normname#", "#genname#"],
+  "normname": ["merlin", "bob", "joe-bob", "#genname#"],
+  "ptname": ["vo", "lo", "mer", "mor", "nen", "kai"],
+  "genname": ["#ptname##ptname#", "#ptname##ptname##ptname#", "#ptname##ptname##ptname##ptname#"],
+  "media": ["book", "Flash Drive", "Hastily-scrawled-writings-on-a-napkin", "tome", "scroll", "graffiti", "Tattered Notebook", "Epic Poem"],
+  "magic": ["necro", "arith", "beer", "bison", "potato", "techno", "arachno", "sorc", "magic", "psycho"],
+  "magicSuffix": ["mancy", "-ery", "ery", "magic", "-illusion"],
+  "origin": ["#name.capitalize#'s #media.capitalize# of #magic.capitalize##magicSuffix#"]
+}
