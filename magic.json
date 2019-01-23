@@ -12,10 +12,25 @@
       "lin",
       "tos",
       "tod",
-      "sal"
+      "sal",
+      "sor",
+      "ser"
   ],
   "genname": ["#ptname##ptname#", "#ptname##ptname##ptname#", "#ptname##ptname##ptname##ptname#"],
-  "media": ["book", "Flash Drive", "Hastily-scrawled-writings-on-a-napkin", "tome", "scroll", "graffiti", "Tattered Notebook", "Epic Poem"],
+  "media": [
+      "book",
+      "Flash Drive",
+      "Hastily-scrawled-writings-on-a-napkin",
+      "tome",
+      "scroll",
+      "graffiti",
+      "Tattered Notebook",
+      "Epic Poem",
+      "floppy Disk",
+      "zip drive",
+      "folio",
+      "magazine"
+  ],
   "magicPrefix": [
       "necro",
       "arith",
