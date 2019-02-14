@@ -8,8 +8,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-def get_magic_snippet():
-    with open('magic.json') as m:
+def get_tracery_snippet(name):
+    with open(f'{name}.json') as m:
         magic_rules = json.load(m)
 
     magic = tracery.Grammar(magic_rules)
@@ -26,11 +26,19 @@ def hello():
 
 @app.route('/magic')
 def magic_tome():
-    return render_template('magic.html', snippet=get_magic_snippet())
+    return render_template('magic.html', snippet=get_tracery_snippet('magic'))
 
 @app.route('/magic/snippet')
 def magic_snippet():
-    return get_magic_snippet()
+    return get_tracery_snippet('magic')
+
+@app.route('/dnd')
+def dnd():
+    return render_template('dnd.html', snippet=get_tracery_snippet('dnd'))
+
+@app.route('/dnd/snippet')
+def dnd_snippet():
+    return get_tracery_snippet('dnd')
 
 @app.route('/')
 def about():
