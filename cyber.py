@@ -4,9 +4,17 @@ from tracery.modifiers import base_english
 import json
 import random
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify, send_file, abort
+from flask_basicauth import BasicAuth
+import toml
+
+secrets = toml.load('secrets.toml')
 
 app = Flask(__name__)
+app.config['BASIC_AUTH_USERNAME'] = secrets['user']
+app.config['BASIC_AUTH_PASSWORD'] = secrets['password']
+
+basic_auth = BasicAuth(app)
 
 def get_tracery_snippet(name):
     with open(f'{name}.json') as m:
@@ -19,6 +27,14 @@ def get_tracery_snippet(name):
 def get_snippet():
     with open('cyber_snippets') as c:
         return random.choice(c.readlines()).strip()
+
+@app.route('/logs/<log_name>')
+@basic_auth.required
+def coop(log_name):
+    if log_name in ['coop.log', 'main.log']:
+        return send_file('/home/archangelic/projects/wallflower/{}'.format(log_name))
+    else:
+        abort(404)
 
 @app.route('/snippet')
 def hello():
@@ -39,6 +55,10 @@ def dnd():
 @app.route('/dnd/snippet')
 def dnd_snippet():
     return get_tracery_snippet('dnd')
+
+@app.route('/ip')
+def ip():
+    return request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
 
 @app.route('/')
 def about():

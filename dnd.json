@@ -46,6 +46,14 @@
   "origin": [
     "#alignment# #race# #class# - #background# background"
   ],
+  "Elf": [
+    "High Elf",
+    "Drow",
+    "Eladrin",
+    "Sea Elf",
+    "Shadar-Kai",
+    "Wood Elf"
+  ],
   "race": [
     "Aarakocra",
     "Aasimar",
@@ -54,7 +62,7 @@
     "Changeling",
     "Dragonborn",
     "Dwarf",
-    "Elf",
+    "#Elf#",
     "Firbolg",
     "Genasi",
     "Gith",

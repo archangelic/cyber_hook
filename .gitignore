@@ -4,3 +4,4 @@ myproject.sock
 venv/
 __pycache__/
 *.pyc
+secrets.toml
