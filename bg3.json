@@ -1,0 +1,183 @@
+{
+  "alignment": [
+    "Lawful Good",
+    "Neutral Good",
+    "Chaotic Good",
+    "Lawful Neutral",
+    "Neutral",
+    "Chaotic Neutral",
+    "Lawful Evil",
+    "Neutral Evil",
+    "Chaotic Evil"
+  ],
+  "background": [
+    "Acolyte",
+    "Charlatan",
+    "Criminal",
+    "Entertainer",
+    "Folk Hero",
+    "Guild Artisan",
+    "Hermit",
+    "Noble",
+    "Outlander",
+    "Sage",
+    "Soldier",
+    "Urchin"
+  ],
+  "class": [
+    "Barbarian (Path of #barbarian#)",
+    "Bard (College of #bard#)",
+    "Cleric (#cleric# Domain)",
+    "Druid (Circle of #druid#)",
+    "Fighter (#fighter#)",
+    "Monk (Way of #monk#)",
+    "Paladin (#paladin#)",
+    "Ranger (#ranger#)",
+    "Rogue (#rogue#)",
+    "Sorcerer (#sorcerer#)",
+    "Warlock (The #warlock#)",
+    "Wizard (#wizard#)"
+  ],
+  "artificer": [
+    "Alchemist",
+    "Armorer",
+    "Artillerist",
+    "Battle Smith"
+  ],
+  "barbarian": [
+    "the Berserker",
+    "the Wildheart",
+    "Wild Magic"
+  ],
+  "bard": [
+    "Lore",
+    "Swords",
+    "Valor"
+  ],
+  "cleric": [
+    "Knowledge",
+    "Life",
+    "Light",
+    "Nature",
+    "Tempest",
+    "Trickery",
+    "War"
+  ],
+  "druid": [
+    "Spores",
+    "the Land",
+    "the Moon"
+  ],
+  "fighter": [
+    "Battle Master",
+    "Champion",
+    "Eldritch Knight"
+  ],
+  "monk": [
+    "Shadow",
+    "the Four Elements",
+    "the Open Hand"
+  ],
+  "paladin": [
+    "Oath of Devotion",
+    "Oath of the Ancients",
+    "Oath of Vengeance",
+    "Oathbreaker"
+  ],
+  "ranger": [
+    "Beast Master",
+    "Gloom Stalker",
+    "Hunter"
+  ],
+  "rogue": [
+    "Arcane Trickster",
+    "Aassassin",
+    "Thief"
+  ],
+  "sorcerer": [
+    "Draconic Bloodline",
+    "Storm Sorcery",
+    "Wild Magic"
+  ],
+  "warlock": [
+    "Archfey",
+    "Fiend",
+    "Great Old One"
+  ],
+  "wizard": [
+    "School of Abjuration",
+    "School of Conjuration",
+    "School of Divination",
+    "School of Enchantment",
+    "School of Evocation",
+    "School of Illusion",
+    "School of Necromancy",
+    "School of Transmutation"
+  ],
+  "origin": [
+    "#race# #class# - #background# background"
+  ],
+  "Elf": [
+    "High Elf",
+    "Wood Elf"
+  ],
+  "race": [
+    "#Dragonborn# Dragonborn",
+    "#Drow# Drow",
+    "#Dwarf#",
+    "#Elf#",
+    "Githyanki",
+    "#Gnome# Gnome",
+    "#Halfelf#Half-Elf",
+    "Half-Orc",
+    "#Halfling# Halfling",
+    "Human",
+    "#Tiefling#Tiefling"
+  ],
+  "Dragonborn": [
+    "#Chromatic#",
+    "#Metallic#"
+  ],
+  "Chromatic": [
+    "Black",
+    "Blue",
+    "Green",
+    "Red",
+    "White"
+  ],
+  "Metallic": [
+    "Brass",
+    "Bronze",
+    "Copper",
+    "Gold",
+    "Silver"
+  ],
+  "Drow": [
+    "Lolth-Sworn",
+    "Seldarine"
+  ],
+  "Dwarf": [
+    "Duergar",
+    "Gold Dwarf",
+    "Shield Dwarf"
+  ],
+  "Halfelf": [
+    "Drow ",
+    "High ",
+    "Wood "
+  ],
+  "Gnome": [
+    "Deep",
+    "Forest",
+    "Rock"
+  ],
+  "Halfling": [
+    "Lightfoot",
+    "Strongheart"
+  ],
+  "Tiefling": [
+    "Asmodeus ",
+    "Mephistopheles ",
+    "Zariel "
+  ]
+}

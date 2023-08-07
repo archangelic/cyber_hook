@@ -28,11 +28,11 @@ def get_snippet():
     with open('cyber_snippets') as c:
         return random.choice(c.readlines()).strip()
 
-@app.route('/logs/<log_name>')
-@basic_auth.required
+# @app.route('/logs/<log_name>')
+# @basic_auth.required
 def coop(log_name):
-    if log_name in ['coop.log', 'main.log']:
-        return send_file('/home/archangelic/projects/wallflower/{}'.format(log_name))
+    if log_name in ['coop.log', 'main.log', 'basement.log']:
+        return send_file('/home/archangelic/wallflower/{}'.format(log_name))
     else:
         abort(404)
 
@@ -51,6 +51,10 @@ def magic_snippet():
 @app.route('/dnd')
 def dnd():
     return render_template('dnd.html', snippet=get_tracery_snippet('dnd'))
+
+@app.route('/bg3')
+def bg3():
+    return render_template('bg3.html', snippet=get_tracery_snippet('bg3'))
 
 @app.route('/dnd/snippet')
 def dnd_snippet():

@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Random BG3 Character</title>
+<style>
+body {
+    color: goldenrod;
+    background: black;
+    font-family: serif;
+}
+a:link {
+    color: goldenrod;
+}
+a:visited {
+    color: goldenrod;
+}
+a:hover {
+    color: gold;
+}
+.boxed {
+    border: 1px solid;
+    display: inline-block;
+    padding: 10px;
+}
+input {
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    background-color: black;
+    margin: 5px 0px;
+}
+</style>
+</head>
+
+<body>
+    <h1>Random BG3 Character Generator</h1>
+    <div class="boxed">
+        {{ snippet }}
+    </div>
+    <form><input type=button value="Generate" onClick="window.location.reload()"></form>
+    <p><a href="https://github.com/archangelic/cyber_hook">Source Code</a></p>
+    <p>by <a href="https://cybre.space/@archangelic">archangelic</a></p>
+    <p>See also:</p>
+    <ul>
+	    <li><a href="magic">Magic Tome Generator</a></li>
+	    <li><a href="dnd">D&D Character Generator</a></li>
+    </ul>
+</body>
+</html>
